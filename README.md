@@ -1,4 +1,4 @@
-# transpose
+# transpose.py
 ## Python script to transpose a .csv file
 ---
 ## Run:
