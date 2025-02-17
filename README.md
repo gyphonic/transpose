@@ -4,7 +4,7 @@
 ## Run:
 
 Run this command in your terminal from the same directory as the file and script.
-'python transpose.py'
+`python transpose.py`
 
 Transposed file will be saved as ***output.csv***
 ---
