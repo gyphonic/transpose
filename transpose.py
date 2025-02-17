@@ -1,5 +1,5 @@
 #gyphonic/transpose.py
-#V1.1
+#V1.2
 
 import pandas as pd
 import os
@@ -8,9 +8,9 @@ def main():
     try:
         #boilerplate
         print(" ")
-        print("gyphonic/transpose V1.1")
+        print("gyphonic/transpose V1.2")
         print("Script to transpose a .csv file")
-        print("Transposition swaps the rows and columns of a file.")
+        print("Transposition swaps the rows and columns of a file by reflecting over the diagonal.")
         print(" ")
 
         #get current directory
@@ -31,9 +31,8 @@ def main():
             except:
                 print("File error. Double check file type.")
 
-            #drop first column index and transpose
+            #transpose
             try:
-                df = df.drop([0], axis = 1)
                 df = df.T
             except:
                 print("Transposition error.")
